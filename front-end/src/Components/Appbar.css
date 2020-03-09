@@ -1,0 +1,18 @@
+.header {
+background-color: black;
+color: aliceblue;
+}
+
+.bar {
+    background-color: #f76;
+    text-align: center;
+}
+
+.switch{
+    color:green;
+    background-color: chartreuse;
+}
+
+.titlle {
+text-align: center;
+}
