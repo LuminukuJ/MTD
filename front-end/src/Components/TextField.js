@@ -42,15 +42,15 @@ export default function FormPropsTextFields() {
                     label="City"
                     variant="outlined"
                 />
-                <TextField id="roadNumber" label="Road Number" type="search" variant="outlined" />
+                <TextField id="roadNumber" label="Road Number" variant="outlined" />
 
-                <TextField id="street" label="Street Name" type="search" variant="outlined" />
+                <TextField id="street" label="Street Name" variant="outlined" />
 
-                <TextField id="startDate" label="Start Date" type="search" variant="outlined" />
+                <TextField id="startDate" label="Start Date" variant="outlined" />
 
-                <TextField id="endDate" label="End Date" type="search" variant="outlined" />
+                <TextField id="endDate" label="End Date" variant="outlined" />
 
-                <TextField id="begining" label="Begining at" type="search" variant="outlined" />
+                <TextField id="begining" label="Begining at" variant="outlined" />
             </div>
         </form>
     );

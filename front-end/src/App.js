@@ -5,6 +5,7 @@ import './Components/Appbar.css';
 import AppBar from './Components/Appbar';
 import MapContainer from './Components/MapContainer';
 import TextField from './Components/TextField';
+import Form from './Components/Form';
 
 function App() {
   return (
@@ -32,15 +33,17 @@ function App() {
         <div className="section">
           <div className="left">
             <h1>Event Création</h1>
-            <TextField />
+            <Form />
           </div>
           <div className="right">
             <h1>Localisation</h1>
             <MapContainer className="Google" />
           </div>
-
         </div>
+        {/* <div className="form">
 
+          <TextField />
+        </div> */}
 
       </body>
     </div>

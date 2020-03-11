@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 import { withStyles } from "@material-ui/core/styles";
 import Axios from "axios";
+import TextField from '@material-ui/core/TextField';
+
 
 const styles = theme => ({
     container: {
@@ -115,7 +117,7 @@ class Form extends Component {
 
         Axios({
             method: "post",
-            url: "http://localhost:8082/mtd/eventform/createdto",
+            url: "http://localhost:8181/mtd/eventform/createdto",
             data: dto,
             config: { headers: { "Content-Type": "application/json" } }
         })
@@ -135,23 +137,40 @@ class Form extends Component {
             <div className={classes.container}>
                 {
 
+
                     <form onSubmit={this.handleSubmit}>
                         <label>
                             Event Form
-						<input type="text" name="name" onChange={this.handleChange1} />
-                            <input type="text" name="description" onChange={this.handleChange2} />
-                            <input type="text" name="type" onChange={this.handleChange3} />
-                            <input type="text" name="creator" onChange={this.handleChange4} />
-                            <input type="text" name="city" onChange={this.handleChange5} />
-                            <input type="text" name="roadNumber" onChange={this.handleChange6} />
-                            <input type="text" name="streetName" onChange={this.handleChange7} />
-                            <input type="text" name="date" onChange={this.handleChange8} />
-                            <input type="text" name="hour" onChange={this.handleChange9} />
-
+                    <TextField id="name" label="Name" variant="outlined" onChange={this.handleChange1} />
+                            <TextField id="description" label="Description" variant="outlined" onChange={this.handleChange2} />
+                            <TextField id="type" label="Type" variant="outlined" onChange={this.handleChange3} />
+                            <TextField id="creator" label="Organized By" variant="outlined" onChange={this.handleChange4} />
+                            <TextField id="city" label="City" variant="outlined" onChange={this.handleChange5} />
+                            <TextField id="roadNumber" label="Road Number" variant="outlined" onChange={this.handleChange6} />
+                            <TextField id="streetName" label="Street Name" variant="outlined" onChange={this.handleChange7} />
+                            <TextField id="date" label="Start Date" variant="outlined" onChange={this.handleChange8} />
+                            <TextField id="hour" label="Hour" variant="outlined" onChange={this.handleChange9} />
                         </label>
-                        <button type="submit"
-                        >Add</button>
-                    </form>
+                        <button type="submit">Add</button>
+                    </form>}
+
+                {/* // <form onSubmit={this.handleSubmit}>
+                    //     <label>
+                    //         Event Form
+					// 	<input type="text" name="name" onChange={this.handleChange1} />
+                    //         <input type="text" name="description" onChange={this.handleChange2} />
+                    //         <input type="text" name="type" onChange={this.handleChange3} />
+                    //         <input type="text" name="creator" onChange={this.handleChange4} />
+                    //         <input type="text" name="city" onChange={this.handleChange5} />
+                    //         <input type="text" name="roadNumber" onChange={this.handleChange6} />
+                    //         <input type="text" name="streetName" onChange={this.handleChange7} />
+                    //         <input type="text" name="date" onChange={this.handleChange8} />
+                    //         <input type="text" name="hour" onChange={this.handleChange9} />
+
+                    //     </label>
+                    //     <button type="submit" */}
+                {/* //     >Add</button>
+                    // </form> */}
                 }
             </div>
         )

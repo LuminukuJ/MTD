@@ -13,7 +13,7 @@ import fr.formation.mtd.service.EventFormService;
 
 @RestController
 @RequestMapping("/eventform")
-@CrossOrigin(origins = "*")
+@CrossOrigin()
 public class EventFormController {
 	
 private final EventFormService eventFormService;

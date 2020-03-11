@@ -9,10 +9,18 @@
 }
 
 .left{
-  text-align: center;
   background-color: white;
   width: 50%;
   padding-top: 10%;
+}
+
+.left h1{
+text-align: center;
+}
+
+.left Form{
+  text-align: center;
+  padding-top: 5%;
 }
 
 
